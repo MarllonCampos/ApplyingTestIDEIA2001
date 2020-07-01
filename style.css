@@ -3,10 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: hidden;
+    background-color: #f0f0f5;
+}
+a{
+    cursor:pointer;
+}
 header{
     width: 100%;
-    background-color:#f5f5ff;
+    background-color:white;
     height: 130px;
     display:flex;
     justify-content: space-around;
@@ -28,19 +37,26 @@ header .itens-bar {
 }
 
 
-a{
-    text-decoration: none;transition: border-bottom 0.3s ease;
+nav a{
+    text-decoration: none;
+    transition: border 0.3s ease;
     color:#838383;
+    cursor: pointer;
+}
+
+nav a:not(:last-child){
     margin-right: 38px;
 }
 
-a:hover{
-    border-bottom: 2px solid orangered;
+.selected{
+    border-bottom: 2px solid #f18d15;
     color:#010101;
     font-weight: bold;
 
-    
 }
+  
+    
+
 
 header .user {
     display:flex;
@@ -65,11 +81,133 @@ header .user .name-user {
 header .user .name-user p {
     color:#474747;
 }
-header .user .name-user span{
+header .user .name-user a{
     color:#ee8913;
+    text-decoration: none;
+   
+}
+
+header .user .name-user a:hover{
     text-decoration: underline;
 }
 
 
 
+main::before{
+    content:'';
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    background-color: #f08910;
+    top:110px;
+    z-index: -1;
+}
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    margin-bottom: 0;
+    height: 65vh;
+    width: 70vw;
+    background-color: white;
+    padding-top: 28px;
+}
+
+main .select {
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+main .select p {
+    margin-top: 23px;
+    margin-bottom: 35px;
+}
+
+main .select p span {
+    font-weight: bold;
+    
+}
+
+main .select-items{
+    display:flex;
+    width: 100%;
+    align-items:stretch;
+    justify-content: space-evenly;
+
+}
+
+main .select-items a div.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .select-items a div.cards p{
+    margin-top: 14px;
+}
+
+
+main .select-items a div.users p{
+    margin-top: 14px;
+}
+
+
+main a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    height: 180px;
+    border-radius: 24px;
+    background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+}
+
+
+main a:hover{
+    background-image: linear-gradient(to bottom, #ffffff, #ff9f31);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:black;
+
+    width: 100%;
+    height: 45px;
+    bottom:0px;
+}
+
+
+footer p {
+    color:#8c8c8c;
+}
+
+
+footer p span{
+    color:#d67b12;
+    font-weight:bold ;
+    
+
+}

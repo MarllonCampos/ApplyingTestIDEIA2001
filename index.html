@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRIDEIA</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="logo"></div>
         <nav class="itens-bar">
-            <a href="" class="home">Home</a>
-            <a href="Eventos">Eventos</a>
-            <a href="Usuarios">Usuários</a>
-            <a href="">Relatórios</a>
+            <a onclick="clicou(0)">Home</a>
+            <a onclick="clicou(1)"> Usuários</a>
+            <a onclick="clicou(2)"> Relatórios</a>
+            <a onclick="clicou(3)"> Eventos</a>
         </nav>
 
         <div class="user">
             <div class="icon-user"></div>
-            <div class="name-user"><p>Igor Gonçalves</p>
-            <span>Desconectar</span></div>
+            <div class="name-user">
+                <p>Igor Gonçalves</p>
+                <a href="/">Desconectar</a>
+            </div>
         </div>
     </header>
+
+    <main>
+        <div class="select">
+            <p>Olá <span>Igor Gonçalves</span>, selecione uma das opções abaixo:</p>
+        </div>
+        <div class="select-items">
+            <a>
+                <div class="cards myevents">
+                    <img src="imgs/icone-eventos.png" alt="Eventos">
+                    <p>Meus Eventos</p>
+                </div>
+            </a>
+
+            <a>
+                <div class="cards users">
+                    <img src="imgs/icone-usuarios.png" alt="Usuarios">
+                    <p>
+                        Usuários
+                    </p>
+                </div>
+            </a>
+
+            <a>
+                <div class="cards reports">
+                    <img src="imgs/icone-relatorios.png" alt="">
+                    <p> Relatórios </p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+
+    <footer>
+        <p><span>Ideia 2001</span> &copy;Copyright 2019 - Todos os direitos Reservados</p>
+    </footer>
+
+    <script>
+        const buttons = document.querySelectorAll('.itens-bar > a')
+
+        function clicou(value) {
+            for(const botao of buttons){
+                botao.classList.remove('selected')
+            }
+            buttons[value].classList.add('selected')
+        }
+
+    </script>
 </body>
+
 </html>
