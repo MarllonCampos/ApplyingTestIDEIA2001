@@ -114,6 +114,23 @@ main{
     background-color: white;
     padding-top: 28px;
 }
+main a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 275px;
+    height: 180px;
+    border-radius: 24px;
+    background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+}
+
+
+main a:hover{
+    background-image: linear-gradient(to bottom, #ffffff, #ff9f31);
+    font-weight: bold;
+    
+}
 
 main .select {
     text-align: center;
@@ -156,32 +173,6 @@ main .select-items a div.users p{
 }
 
 
-main a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 275px;
-    height: 180px;
-    border-radius: 24px;
-    background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
-}
-
-
-main a:hover{
-    background-image: linear-gradient(to bottom, #ffffff, #ff9f31);
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -206,7 +197,7 @@ footer p {
 
 
 footer p span{
-    color:#d67b12;
+    color:#f59425;
     font-weight:bold ;
     
 
