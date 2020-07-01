@@ -5,7 +5,43 @@
 }
 
 header{
-    width: 100%
+    width: 100%;
+    background-color:#f5f5ff;
+    height: 130px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+header .logo{
+    background-image: url('imgs/logo.png');
+    background-repeat: no-repeat;
+
+    width: 210px;
+    height: 41px;
+}
+
+header .itens-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:21vw;
+}
+
+
+a{
+    text-decoration: none;transition: border-bottom 0.3s ease;
+    color:rgba(0, 0, 0, 0.671);
+}
+
+a:hover{
+    border-bottom: 2px solid orangered;
+    color:#333030;
+    font-weight: bold;
+
+    
+}
+
+
 
 
