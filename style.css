@@ -164,17 +164,8 @@ main .select-items a div.cards{
 }
 
 main .select-items a div.cards p{
-    margin-top: 14px;
+    margin-top: 29px;
 }
-
-
-main .select-items a div.users p{
-    margin-top: 14px;
-}
-
-
-
-
 
 footer{
     position: fixed;
