@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRIDEIA</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
     <header>
         <div class="logo"></div>
         <nav class="itens-bar">
-            <a onclick="clicou(0)" class='selected'>Home</a>
-            <a onclick="clicou(3)"> Eventos</a>
-            <a onclick="clicou(1)"> Usuários</a>
-            <a onclick="clicou(2)"> Relatórios</a>
+            <a onclick="pressed(0)" class='selected'>Home</a>
+            <a onclick="pressed(1)"> Eventos</a>
+            <a onclick="pressed(2)"> Usuários</a>
+            <a onclick="pressed(3)"> Relatórios</a>
         </nav>
 
         <div class="user">
             <div class="icon-user"></div>
             <div class="name-user">
                 <p>Igor Gonçalves</p>
-                <a href="/">Desconectar</a>
+                <a class='disconnect'>Desconectar</a>
             </div>
         </div>
     </header>
@@ -41,7 +42,7 @@
 
             <a>
                 <div class="cards users">
-                    <img src="imgs/icone-usuarios.png" alt="Usuarios">
+                    <img src="imgs/icone-usuarios.png" alt="">
                     <p>
                         Usuários
                     </p>
@@ -65,15 +66,23 @@
     <script>
         const buttons = document.querySelectorAll('.itens-bar > a')
 
-        function clicou(value) {
+
+        const disconnect = document.querySelector('header .user .name-user > a').addEventListener('click',function(){
+            alert('Desconectado')
+        })
+
+        function pressed(value) {
             for(const botao of buttons){
                 botao.classList.remove('selected')
             }
 
             buttons[value].classList.add('selected')
 
+            
             alert(buttons[value].textContent)
         }
+
+
 
     </script>
 </body>

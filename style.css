@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 body{
     display:flex;
@@ -42,6 +43,7 @@ nav a{
     text-decoration: none;
     transition: border 0.3s ease;
     color:#838383;
+    user-select: none;
     cursor: pointer;
 }
 
@@ -56,12 +58,11 @@ nav a:not(:last-child){
 
 }
   
-    
-
 
 header .user {
     display:flex;
     align-items: center;
+    user-select: none;
     justify-content: center;
 
 }
@@ -70,12 +71,14 @@ header .user .icon-user {
     background-image: url('imgs/user.png');
     width:48px;
     height:48px;
+    user-select: none;
     margin-right: 13px;
 }
 
 header .user .name-user {
     display:flex;
     flex-direction: column;
+    user-select: none;
     text-align: right;
 }
 
@@ -84,11 +87,13 @@ header .user .name-user p {
 }
 header .user .name-user a{
     color:#ee8913;
+    user-select: none;
     text-decoration: none;
    
 }
 
 header .user .name-user a:hover{
+    user-select: none;
     text-decoration: underline;
 }
 
@@ -167,7 +172,11 @@ main .select-items a div.cards{
 main .select-items a div.cards p{
     margin-top: 29px;
 }
-
+main .select-items a .cards .users img{
+   src: url('imgs/icone-usuarios.png');
+   width: 100px;
+   height: 100px;
+}
 footer{
     position: fixed;
 
