@@ -26,6 +26,26 @@
                 <a class='disconnect'>Desconectar</a>
             </div>
         </div>
+
+        <div class="mobile-nav">
+            <p>Menu</p>
+            <div class="dropdown-menu">
+                <input type="checkbox" id="check">
+                <label for="check"></label>
+                <span></span>
+                <div class="mobile-items">
+                    <div class="home-mobile">Home</div>
+                    <div class="events-mobile">Eventos</div>
+                    <div class="promoter-mobile">Promotores</div>
+                    <div class="reports-mobile">Relatórios</div>
+                    <div class="help-mobile">Ajuda</div>
+                    <div class="exit-mobile">Sair</div>
+
+                </div>
+            </div>
+        </div>
+
+
     </header>
 
     <main>
@@ -67,23 +87,20 @@
         const buttons = document.querySelectorAll('.itens-bar > a')
 
 
-        const disconnect = document.querySelector('header .user .name-user > a').addEventListener('click',function(){
+        const disconnect = document.querySelector('header .user .name-user > a').addEventListener('click', function() {
             alert('Desconectado')
         })
 
         function pressed(value) {
-            for(const botao of buttons){
+            for (const botao of buttons) {
                 botao.classList.remove('selected')
             }
 
             buttons[value].classList.add('selected')
 
-            
+
             alert(buttons[value].textContent)
         }
-
-
-
     </script>
 </body>
 

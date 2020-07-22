@@ -1,0 +1,10 @@
+O teste é bem simples, SEM UTILIZAR FRAMEWORK, e podendo dar continuidade ao seu projeto feito no primeiro teste, realize os seguintes passos:
+  - Passo 1: aplicar responsividade, chegando o mais próximo possível das imagens: exemplo_1.png, exemplo_2.png e exemplo_3.png. Lembrando que, com a mesma página, é possível acessar tanto Desktop quanto Mobile.
+  - Passo 2: Em cada botão, criar uma função exibindo o título correspondente em uma popup customizada por você.
+
+Diferenciais:
+
+- Criar elementos, como por exemplo, botões, header etc, no formato de componentes;
+
+
+Ao finalizar seu teste, compactar em formato zip e enviar para o seguinte e-mail: igor@ideia2001.com.br
