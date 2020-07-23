@@ -11,7 +11,7 @@
     }
     header.mobile {
         display: initial;
-        height: 42vh;
+        height: 53vh;
     }
     header.mobile .logo {
         height: 6vh;
@@ -92,11 +92,21 @@
         transition: all .4s linear;
     }
     header.mobile .mobile-items {
-        display: initial;
+        display: none;
         width: 100%;
         background-color: #fff;
         padding: 10px;
         margin: 10px 0;
+    }
+    header.mobile .mobile-items div:not(:last-child) {
+        margin: 10px 0;
+        color: #777777;
+        font-weight: bold;
+    }
+    header.mobile .mobile-items div.exit-mobile {
+        padding-top: 2px;
+        border-top: 1px solid #f0f0f0;
+        color: #ee8913;
     }
     #check:checked~span {
         background-color: transparent;
@@ -108,12 +118,11 @@
         transform: translate(0px, 8px) rotate(45deg);
     }
     main::before {
-        top: 310px;
+        top: 380px;
     }
     main {
         width: 94%;
         height: 80%;
-        /* margin-top: 65%; */
     }
     main .select {
         font-size: 24px;
