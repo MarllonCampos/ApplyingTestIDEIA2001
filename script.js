@@ -4,8 +4,11 @@ headerMobile = document.querySelector('header.mobile')
 
 var styleElem = document.head.appendChild(document.createElement("style"));
 
-showMenu = document.querySelector('.mobile .mobile-menu .dropdown-menu label').addEventListener('click', function() {
+showMenu = document.querySelector('.mobile .mobile-menu .dropdown-menu label').addEventListener('click', dropdownMenu)
 
+
+
+function dropdownMenu() {
     if (mobileItems.style.display == "initial") {
         mobileItems.style.display = "none"
         headerMobile.style.height = '22.9vh'
@@ -15,5 +18,4 @@ showMenu = document.querySelector('.mobile .mobile-menu .dropdown-menu label').a
         headerMobile.style.height = '53vh'
         styleElem.innerHTML = 'main:before {top:380px;}'
     }
-
-})
+}
