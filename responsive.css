@@ -28,8 +28,14 @@
         justify-content: space-between;
         align-items: center;
         padding: 5px 12px;
-        background-color: blue;
+        background-color: #f0f0f0;
         width: 95vw;
+        border-radius: 2px;
+        transition: all .4s linear;
+    }
+    header .mobile-nav p {
+        font-size: 22px;
+        font-weight: bold;
     }
     header .dropdown-menu {
         width: 46px;
@@ -37,11 +43,14 @@
         border-radius: 4px;
         border: 1px solid #ee8913;
         display: flex;
+        justify-content: center;
+        transition: all .4s linear;
     }
     header .dropdown-menu label {
         width: inherit;
         height: inherit;
         position: absolute;
+        z-index: 1;
     }
     header .dropdown-menu #check {
         display: none;
@@ -49,21 +58,42 @@
         z-index: 1;
     }
     header .dropdown-menu span {
-        width: 30px;
-        height: 6px;
-        border-radius: 2px;
-        background-color: #fff;
+        width: 20px;
+        height: 2px;
+        background-color: #f29930;
         position: relative;
-        top: 20px;
-        left: 7px;
+        top: 48%;
+        transition: all .4s linear;
     }
     header .dropdown-menu span:before {
         content: '';
-        width: 30px;
-        height: 6px;
+        width: inherit;
+        height: inherit;
+        background-color: #f29930;
+        top: 7px;
+        position: absolute;
+        transition: all .4s linear;
+    }
+    header .dropdown-menu span:after {
+        content: '';
+        width: inherit;
+        height: inherit;
+        background-color: #f29930;
+        bottom: 7px;
+        position: absolute;
+        transition: all .4s linear;
     }
     header .dropdown-menu .mobile-items {
         display: none;
+    }
+    #check:checked~span {
+        background-color: transparent;
+    }
+    #check:checked~span:before {
+        transform: translate(0, -6px) rotate(-45deg);
+    }
+    #check:checked~span:after {
+        transform: translate(0px, 8px) rotate(45deg);
     }
     main::before {
         top: 140px;
