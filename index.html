@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="desktop">
         <div class="logo"></div>
         <nav class="itens-bar">
             <a onclick="pressed(0)" class='selected'>Home</a>
@@ -26,27 +26,35 @@
                 <a class='disconnect'>Desconectar</a>
             </div>
         </div>
+    </header>
 
-        <div class="mobile-nav">
-            <p>Menu</p>
-            <div class="dropdown-menu">
-                <input type="checkbox" id="check">
-                <label for="check"></label>
-                <span></span>
-                <div class="mobile-items">
-                    <div class="home-mobile">Home</div>
-                    <div class="events-mobile">Eventos</div>
-                    <div class="promoter-mobile">Promotores</div>
-                    <div class="reports-mobile">Relatórios</div>
-                    <div class="help-mobile">Ajuda</div>
-                    <div class="exit-mobile">Sair</div>
-
+    <header class="mobile">
+        <div class="logo"></div>
+        <nav class="mobile-nav">
+            <div class="mobile-menu">
+                <p>Menu</p>
+                <div class="dropdown-menu">
+                    <input type="checkbox" id="check">
+                    <label for="check"></label>
+                    <span></span>
                 </div>
             </div>
-        </div>
 
+            <div class="mobile-items">
+                <div class="home-mobile">Home</div>
+                <div class="events-mobile">Eventos</div>
+                <div class="promoter-mobile">Promotores</div>
+                <div class="reports-mobile">Relatórios</div>
+                <div class="help-mobile">Ajuda</div>
+                <div class="exit-mobile">Sair</div>
 
+            </div>
+
+        </nav>
     </header>
+
+
+
 
     <main>
         <div class="select">

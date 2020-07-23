@@ -39,6 +39,10 @@ header .itens-bar {
     align-items: center;
 }
 
+.mobile {
+    display: none;
+}
+
 nav a {
     text-decoration: none;
     transition: border 0.3s ease;
