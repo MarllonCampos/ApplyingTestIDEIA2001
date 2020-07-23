@@ -11,7 +11,7 @@
     }
     header.mobile {
         display: initial;
-        height: 53vh;
+        height: 22.9vh;
     }
     header.mobile .logo {
         height: 6vh;
@@ -118,7 +118,7 @@
         transform: translate(0px, 8px) rotate(45deg);
     }
     main::before {
-        top: 380px;
+        top: 170px;
     }
     main {
         width: 94%;
@@ -165,9 +165,4 @@
         font-size: 24px;
         text-align: center;
     }
-}
-
-
-}
-
 }

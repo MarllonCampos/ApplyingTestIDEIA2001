@@ -199,3 +199,11 @@ footer p span {
     color: #f59425;
     font-weight: bold;
 }
+
+.showing {
+    display: initial;
+}
+
+.hiding {
+    display: none;
+}

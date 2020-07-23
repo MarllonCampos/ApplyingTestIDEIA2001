@@ -4,8 +4,6 @@ headerMobile = document.querySelector('header.mobile')
 
 var styleElem = document.head.appendChild(document.createElement("style"));
 
-
-
 showMenu = document.querySelector('.mobile .mobile-menu .dropdown-menu label').addEventListener('click', function() {
 
     if (mobileItems.style.display == "initial") {
@@ -18,5 +16,4 @@ showMenu = document.querySelector('.mobile .mobile-menu .dropdown-menu label').a
         styleElem.innerHTML = 'main:before {top:380px;}'
     }
 
-    console.log(headerMobile)
 })
