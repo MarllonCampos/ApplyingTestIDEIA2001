@@ -46,9 +46,16 @@
     nav a {
         text-decoration: none;
         transition: border 0.3s ease;
-        color: #838383;
+        padding: 8px;
+        color: #aaa;
         user-select: none;
         cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    nav a:hover {
+        background-color: rgba(249, 207, 159, 1);
+        color: #838383;
     }
     
     nav a:not(:last-child) {

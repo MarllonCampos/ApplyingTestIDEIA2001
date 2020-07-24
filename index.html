@@ -13,7 +13,7 @@
     <header class="desktop">
         <div class="logo"></div>
         <nav class="itens-bar">
-            <a onclick="pressed(0)" class='selected'>Home</a>
+            <a onclick="pressed(0)">Home</a>
             <a onclick="pressed(1)"> Eventos</a>
             <a onclick="pressed(2)"> Usuários</a>
             <a onclick="pressed(3)"> Relatórios</a>
@@ -103,17 +103,17 @@
     </footer>
 
     <script>
-        const buttons = document.querySelectorAll('.itens-bar > a')
+        const buttons = document.querySelectorAll('.itens-bar > a') // Captura os elementos do menu de navegação DO desktop
 
 
-        const disconnect = document.querySelector('header .user .name-user > a').addEventListener('click', function(e) {
+        const disconnect = document.querySelector('header .user .name-user > a').addEventListener('click', function(e) { // Captura o botão de desconectar e mostra o Popup ao clicar
             togglePop()
             window.popTitle.innerText = `${e.target.innerText}`
 
             window.popContent.innerHTML = `Parabéns você foi desconectado`
         })
 
-        function pressed(value) {
+        function pressed(value) { // Adiciona aos botões do menu uma borda inferior quando clicados
             for (const botao of buttons) {
                 botao.classList.remove('selected')
             }
