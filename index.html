@@ -52,26 +52,36 @@
 
         </nav>
     </header>
-    <section class="pop-up showing">
-        <div class="content">
-            <div class="header">teste</div>
+    <section id="pop-up" class="hiding">
+        <div class="container ">
+            <div class="header ">
+                <p class="title ">teste</p>
+                <div class="close-X ">
+                    <input type="checkbox" id="closing">
+                    <label for="close-X "></label>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="content"></div>
+
         </div>
     </section>
     <main>
-        <div class="select">
+        <div class="select ">
             <p>Olá <span>Igor Gonçalves</span>, selecione uma das opções abaixo:</p>
         </div>
-        <div class="select-items">
+        <div class="select-items ">
             <a>
-                <div class="cards myevents">
-                    <img src="imgs/icone-eventos.png" alt="Eventos">
+                <div class="cards myevents ">
+                    <img src="imgs/icone-eventos.png " alt="Eventos ">
                     <p>Meus Eventos</p>
                 </div>
             </a>
 
             <a>
-                <div class="cards users">
-                    <img src="imgs/icone-usuarios.png" alt="">
+                <div class="cards users ">
+                    <img src="imgs/icone-usuarios.png " alt=" ">
                     <p>
                         Usuários
                     </p>
@@ -79,8 +89,8 @@
             </a>
 
             <a>
-                <div class="cards reports">
-                    <img src="imgs/icone-relatorios.png" alt="">
+                <div class="cards reports ">
+                    <img src="imgs/icone-relatorios.png " alt=" ">
                     <p> Relatórios </p>
                 </div>
             </a>
@@ -96,8 +106,11 @@
         const buttons = document.querySelectorAll('.itens-bar > a')
 
 
-        const disconnect = document.querySelector('header .user .name-user > a').addEventListener('click', function() {
-            alert('Desconectado')
+        const disconnect = document.querySelector('header .user .name-user > a').addEventListener('click', function(e) {
+            togglePop()
+            window.popTitle.innerText = `${e.target.innerText}`
+
+            window.popContent.innerHTML = `Parabéns você foi desconectado`
         })
 
         function pressed(value) {
@@ -107,13 +120,11 @@
 
             buttons[value].classList.add('selected')
 
-
-            alert(buttons[value].textContent)
         }
     </script>
 
 
-    <script src="script.js"></script>
+    <script src="script.js "></script>
 </body>
 
 </html>
